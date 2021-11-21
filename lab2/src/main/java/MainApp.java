@@ -129,7 +129,7 @@ public class MainApp {
         char[] keyPassword = "password".toCharArray();
 
         KeyStore keystore = KeyStore.getInstance("PKCS12");
-        keystore.load(new FileInputStream("2"), keystorePassword);
+        keystore.load(new FileInputStream("C:\\Users\\alexe\\Desktop\\lab2\\src\\main\\resources\\private.p12"), keystorePassword);
         PrivateKey privateKey = (PrivateKey) keystore.getKey("baeldung",
                 keyPassword);
 
